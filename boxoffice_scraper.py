@@ -39,7 +39,8 @@ for page_url in pages_list:
                 movies_year_list,
                 movies_money_list,
             ):
-                file.write(f'1, "{rank.text}", "{name.text}", "{year.text}", "{money.text}"\n')
+                money_formatted = money.text.replace(",","")
+                file.write(f'{rank.text},{name.text},{year.text},{money_formatted}\n')
 
         print(f"> Wrote {len(movies_rank_list)} Movies.\n")
 
