@@ -6,11 +6,11 @@ from bs4 import (
 
 pages_list: list[str] = [
     "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW",
-    # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=200",
-    # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=400",
-    # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=600",
-    # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=800",
-    # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=1000",
+    "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=200",
+    "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=400",
+    "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=600",
+    "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=800",
+    "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=1000",
     # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=1200",
     # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=1400",
     # "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=1600",
