@@ -9,12 +9,17 @@ The profit for each actor gets accumulated and displayed.
 ```py
 df = print_actors_map_pd(actors_map, actors_movies_map, limit=50, movies_limit=1)
 ```
-![top 27 results](images/top_27_result.png)
+<!-- ![top 27 results](images/top_27_result.png) -->
+Limited the movie count to 1
+<img src="https://github.com/Gholamrezadar/most-profitable-actors/blob/main/images/top_27_result.png" width="450">
+
 
 ```py
 df = print_actors_map_pd(actors_map, actors_movies_map, limit=50, movies_limit=5)
 ```
-![top 27 results](images/top_7_result.png)
+<!-- ![top 27 results](images/top_7_result.png) -->
+Limited the movie count to 5
+<img src="https://github.com/Gholamrezadar/most-profitable-actors/blob/main/images/top_7_result.png" width="450">
 
 
 
