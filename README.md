@@ -6,7 +6,15 @@ Then, for each movie, I use [TMDB's API](https://developers.themoviedb.org/3) to
 The profit for each actor gets accumulated and displayed.
 
 ## Results
-py`df = print_actors_map_pd(actors_map, actors_movies_map, limit=50, movies_limit=3)`
+```py
+df = print_actors_map_pd(actors_map, actors_movies_map, limit=50, movies_limit=1)
+```
+![top 27 results](images/top_27_result.png)
+
+```py
+df = print_actors_map_pd(actors_map, actors_movies_map, limit=50, movies_limit=5)
+```
+![top 27 results](images/top_7_result.png)
 
 
 
