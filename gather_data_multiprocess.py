@@ -1,13 +1,18 @@
-import csv
-from collections import defaultdict
-from dotenv import load_dotenv
 import os
-import requests
+import csv
+import pickle
+from collections import defaultdict
 from multiprocessing import Pool
 
+# Third party 
+import requests
+from dotenv import load_dotenv
+
+# Load API_KEY from .env file
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
+# Functions
 def get_movie_id(movie_name, movie_year):
     """Gets the movie_id from TMDB using the movie_name and year
 
@@ -49,11 +54,9 @@ def get_movie_actors(movie_name, movie_year, limit=20):
 
     return actors
 
-
 def get_movie_actors_wrapper(movie_detail):
+    # used for passing to multiprocessing
     return get_movie_actors(movie_detail[1], movie_detail[2], limit=20)
-
-import pickle
 
 def pickling(path, data):
     file = open(path,'wb')
@@ -76,4 +79,4 @@ if __name__ == '__main__':
     # get movie actors multiprocessing
     with Pool(55) as p:
             data = p.map(get_movie_actors_wrapper, movies_list)
-            pickling("data.pckl", data)
+            pickling("actors_data.pckl", data)

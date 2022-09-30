@@ -1,9 +1,8 @@
 import requests
-from bs4 import (
-    BeautifulSoup,
-)
+from bs4 import BeautifulSoup
 
 
+# Top 2000 movies
 pages_list: list[str] = [
     "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW",
     "https://www.boxofficemojo.com/chart/top_lifetime_gross/?area=XWW&offset=200",
